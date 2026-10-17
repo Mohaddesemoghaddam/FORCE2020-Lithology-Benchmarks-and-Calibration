@@ -1,0 +1,28 @@
+# Do not publish raw FORCE data or intermediate data
+data/raw/*
+!data/raw/.gitkeep
+data/prepared/*
+!data/prepared/.gitkeep
+
+# Generated models, predictions, plots and reports
+outputs/
+
+# Large numerical artifacts anywhere in the repo
+*.parquet
+*.feather
+*.joblib
+*.pkl
+*.cbm
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS, environments and secrets
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
